@@ -964,7 +964,30 @@ tasks.forEach(function (task) {
 })
 */
 
+/* 
+constructors and the this keyword:
+function Person(name, dob) {
+  this.name = name
+  this.birthday = new Date(dob)
+  this.calculateAge = function() {
+    const diff = Date.now() - this.birthday.getTiem()
+    const ageDate = new Date(diff)
+    return Math.abs(agfeDate.getUTCFullYear() - 1970)
+  }
+}
 
+const brad = new Person('Brad', '9-10-1981')
+console.log(brad.calculateAge())
+
+constructors allow you to create multiple objects with the same data vars but by automation and the ability to set custom values
+*/
+
+/*
+built in constructors:
+new String(), new Number(), new Boolean, new Function('','','argument'), new Object(), new Array(), new RegExp('\\w+')
+
+constructors are not used that often as there are other more efficient ways to create these things without them, but they may come across them sometimes
+*/
 
 /*Questions:
 - what is the important of do-while loops
